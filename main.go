@@ -42,7 +42,7 @@ func (c compoundFS) Open(name string) (http.File, error) {
 		}
 		f, err := os.Open(filepath.Join(dir, filepath.FromSlash(path.Clean("/"+name))))
 		if err != nil {
-			log.Println("error on base: ", err)
+			log.Println("File not found: ", err)
 			if i == len(attempts) {
 				return nil, err
 
