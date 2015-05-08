@@ -20,7 +20,7 @@ func main() {
 	http.Handle("/", fs)
 
 	log.Println("Listening...")
-	http.ListenAndServe(":3002", nil)
+	http.ListenAndServe(":8000", nil)
 }
 
 type compoundFS struct {
