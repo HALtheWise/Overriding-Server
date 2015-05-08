@@ -12,9 +12,9 @@ This project is extremely simple, and implements a golang web server that serves
   - overrides
     - blockly
     	- core
-    		-[a couple files]
-    	-examples
-    		-[My new example]
+    		- [a couple files]
+    	- examples
+    		- [My new example]
     		
 In this case, a request to http://localhost:8000/blockly/core/[something.html] will return from the overrides directory if that file exists there, otherwise it will return from the base directory.
 
